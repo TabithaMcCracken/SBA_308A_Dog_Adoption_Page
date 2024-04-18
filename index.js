@@ -2,7 +2,6 @@ const count = 6;
 let favorites = [];
 let retrievedFavoritesData = null;
 
-
 document.addEventListener("DOMContentLoaded", function () {
  const dogImagesRow = document.getElementById("dogImages");
  const breedSelect = document.getElementById("breedSelect");
@@ -57,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
          favorites.push(imageUrl); // Add the image to favorites
        } else {
          console.log("Image already in favorites:", imageUrl);
-         // Optionally provide feedback to the user (e.g., display a message)
        }
      }
    });
@@ -101,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
      const response = await fetch(apiUrl);
      const data = await response.json();
      console.log("API Response: ", data.message);
-     const images = data.message.slice(0, count); // Limit to 8 images
+     const images = data.message.slice(0, count); // Limit images
 
 
      // Clear existing images
@@ -152,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
      console.log('Response:', result); // Print response body- looks good
      const id = result.id;
      return id;
-     
+
    } catch (error) {
      console.error(error);
      alert("Failed to send favorites. Please try again later.");
