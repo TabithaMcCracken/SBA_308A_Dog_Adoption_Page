@@ -36,7 +36,7 @@ main {
   padding: 20px;
   display: flex; /* Use Flexbox */
   flex-wrap: wrap; /* Allow content to wrap to the next line */
-  justify-content: right; /* Center content horizontally */
+  justify-content: center; /* Center content horizontally */
   background-color: #F5EBE0;
 }
 
@@ -132,16 +132,18 @@ header h3, header h4 {
   font-size: 16px; /* Adjust the font size as needed */
 }
 
-#FavoritesBtn {
+#favoritesBtn {
   background-color: #E3D5CA;
   color: black;
   border-color: #E3D5CA;
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   justify-content: center;
   align-content: center;
+  display: block;
 
 }
+
 
 .center {
   display: flex; /* Use Flexbox */
@@ -153,9 +155,16 @@ header h3, header h4 {
   margin: 0 auto;
 }
 
-.favoritesContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);}
+#favoritesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
 
+.center .favoritesContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* button type="button" class="btn btn-primary" id="favoritesBtn" */
