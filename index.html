@@ -13,15 +13,20 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Rubik+Lines&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="index.js" defer></script>
   </head>
   <body>
     <header>
       <!-- Navigation bar -->
-      <h1>Dog Adoption</h1>
-      <h2>Aren't they cute?</h2>
-      <h3>Select a breed below to see which dogs are available for adoption.</h3>
+      <h1 class="platypi-font">Dog Adoption</h1>
+      <h2 class="platypi-font">Aren't they cute?</h2>
+      <h3 class="platypi-font">Select a breed below to see which dogs are available for adoption.</h3>
+      <h3 class="platypi-font">Click on any dog image to add it to your favorites.</h3>
     </header>
 
     <main>
@@ -38,7 +43,7 @@
               <select class="form-select" id="breedSelect">
                 <option selected disabled>Select a breed</option>
               </select>
-              <button class="btn btn-primary" id="getBreedImagesBtn">
+              <button class="btn btn-primary" id="getBreedsBtn">
                 Get Breeds
               </button>
             </div>
@@ -46,22 +51,10 @@
         </div>
       </div>
 
-      <!-- Search field and button -->
-      <!-- <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="searchInput"
-                placeholder="Search by name..."
-              />
-              <button class="btn btn-primary" id="searchButton">Search</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      <div id="favoritesContainer">
+          <button type="button" class="btn btn-primary" id="favoritesBtn">Get My favorites</button>
+      </div>
+      
 
       <div id="dogSelected" class="container"></div>
     </main>

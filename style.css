@@ -1,20 +1,161 @@
-.dog-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
-  
-
-  .image-container {
+header h1,
+header h2,
+header h3 {
+  padding: 10px 0; /* Add padding above and below the headers */
+}
+.image-container {
     width: 100%;
     height: 100%;
     display: flex; /* Use flexbox */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-  }
+}
   
-  .image-container img {
+.image-container img {
     max-width: 100%; /* Ensure image does not exceed container width */
     max-height: 100%; /* Ensure image does not exceed container height */
     object-fit: contain; /* Maintain aspect ratio */
-  }
+}
+
+  /* style.css */
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #F5EBE0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  display: flex; /* Use Flexbox */
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
+  justify-content: right; /* Center content horizontally */
+  background-color: #F5EBE0;
+}
+
+/* Dog Cards */
+.dog-card {
+  background-color: D6CCC2;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  width: 150px;
+}
+/* .dog-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+} */
+
+.dog-card .image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  padding: 10px 0; /* Add padding above and below the image */
+}
+
+.dog-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dog-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Dropdown menu and button */
+.container.mb-3 {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#dogImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+//  */
+
+.platypi-font {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 800 */
+  font-weight: 400; 
+  font-style: normal;
+}
+
+header h1 {
+  padding-top: 30px;
+  margin-bottom: 0px;;
+}
+
+header h2 {
+  margin-bottom: 0;
+}
+
+header h1, header h2{
+  background-color: #E3D5CA;
+}
+
+header h3, header h4 {
+  background-color: #D5BDAF;
+  margin-bottom: 0px;;
+}
+
+#getBreedsBtn {
+  background-color: #E3D5CA;
+  color: black;
+  border-color: #E3D5CA;
+}
+
+/* style.css */
+
+/* Dropdown menu */
+.input-group .form-select {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+#FavoritesBtn {
+  background-color: #E3D5CA;
+  color: black;
+  border-color: #E3D5CA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.center {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+   /* Set height to fill viewport */
+}
+.center button {
+  margin: 0 auto;
+}
+
+.favoritesContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+
