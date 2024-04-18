@@ -1,6 +1,6 @@
 # Dog Adoption Page
 
-Welcome to the Dog Adoption Page! This web application allows users to browse through random dog images, select their favorite breeds, and save them for later viewing. Additionally, users can retrieve their saved favorites from an API.
+Welcome to the Dog Adoption Page! This web application allows users to browse through random dog images, select their favorite breeds, and save them for later viewing.
 
 ## Features
 
@@ -71,11 +71,11 @@ To run the Dog Adoption Page locally:
 ## Dependencies
 
 - This project relies on the Fetch API for making HTTP requests.
-- It also utilizes 2 API's mentioned below.
+- This project utilizes 2 API's mentioned below.
 
 ## Credits
 
-- Dog images are fetched from [Dog CEO's Dog API](https://dog.ceo/dog-api/).
-- The JSON Store API is provided by [RapidAPI JSON Store](https://rapidapi.com/apikite/api/json-store/).
+- Dog images are fetched from [Dog CEO's Dog API](https://dog.ceo/dog-api/)
+- The JSON Store API is provided by [RapidAPI JSON Store](https://rapidapi.com/apikite/api/json-store/)
 - Fonts provided by [Google Fonts](https://fonts.google.com/)
 - Color Palette Provided by [Coolors](https://coolors.co/)
